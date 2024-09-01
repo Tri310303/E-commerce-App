@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+    <definition name="baseLayout" template="/WEB-INF/layout/base.jsp">
+        <put-attribute name="title" value="" />
+        <put-attribute name="header" value="/WEB-INF/layout/header.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
+        <put-attribute name="content" value="" />
+    </definition>
+    <definition name="index" extends="baseLayout">
+        <put-attribute name="title" value="Trang chủ quản trị" />
+        <put-attribute name="content" value="/WEB-INF/pages/index.jsp" />
+    </definition>
+    <definition name="products" extends="baseLayout">
+        <put-attribute name="title" value="Sản phẩm" />
+        <put-attribute name="content" value="/WEB-INF/pages/products.jsp" />
+    </definition>
+    <definition name="index2" extends="baseLayout">
+        <put-attribute name="title" value="Cửa hàng" />
+        <put-attribute name="content" value="/WEB-INF/pages/index2.jsp" />
+    </definition>
+    <definition name="stores" extends="baseLayout">
+        <put-attribute name="title" value="Thêm Cửa hàng" />
+        <put-attribute name="content" value="/WEB-INF/pages/stores.jsp" />
+    </definition>
+    <definition name="stats" extends="baseLayout">
+        <put-attribute name="title" value="Thống kê báo cáo" />
+        <put-attribute name="content" value="/WEB-INF/pages/stats.jsp" />
+    </definition>
+    <definition name="check" extends="baseLayout">
+        <put-attribute name="title" value="Danh sách" />
+        <put-attribute name="content" value="/WEB-INF/pages/check.jsp" />
+    </definition>
+</tiles-definitions>
